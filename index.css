@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol, a{
+  list-style: none;
+  text-decoration: none;
+}
+main{
+  display: flex;
+}
+
+/* SIDEBAR */
+#sidebar{
+  background-color: #ddd;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.098);
+  padding-block: 2em;
+  padding-inline-start: 2em;
+  width: 400px;
+}
+
+/* HEADER */
+#sidebar header{
+  padding-bottom: 20px;
+}
+
+/* LINKS TO DIFFERENT SECTIONS */
+#sidebar div.links{
+  margin-left: 2em;
+}
+#sidebar div.links section ol{
+  margin-left: 2em;
+}
+.links li a{
+  color: #126281;
+}
+.links li b{
+  color: #126281
+}
+
+/* #sidebar div.links section ul li:first-child{
+  font-weight: ;
+} */
+
+#main-content{
+  background-color: #ddd;
+  width: 100%;
+  padding-left: 8%;
+  padding-top: 10%;
+}
+
+.auth-3{
+  background-color: #fff;
+  width: 95%;
+  padding: 5px 15px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.149);
+  border-radius: 6px;
+}
+.auth-3 .user-info div{
+  padding: 10px;
+  border-radius: 3px;
+}
+.login-user,.register-user, .create-order{
+  background-color: rgba(0, 0, 255, 0.18);
+}
+.logout-user, .get-all-orders, .get-all-user-orders, .get-single-order{
+  background-color: rgba(127, 255, 212, 0.161);
+  margin: 10px 0;
+}
+.update-order{
+  background-color: rgba(255, 255, 0, 0.111);
+}
+.user-info{
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.user-info span{
+  border: 1px solid black;
+  padding: 3px;
+}
+
+.order-5{
+  background-color: #fff;
+  width: 95%;
+  padding: 5px 15px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.149);
+  border-radius: 6px;
+  margin-top: 1.8em;
+}
+
+.order-5 .order-info div{
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.128);
+  margin: 10px 5px;
+}
+
+.order-info span{
+  border: 1px solid black;
+  padding: 3px;
+}
+#main-content .circle{
+  /* color: red; */
+  width: 20px;
+  height: 20px;
+  background-color: #444;
+  color: #fff;
+  border-radius: 50px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 600px;
+  margin-bottom: 15px;
+}
+
+
+
+
+/* mobile responsiveness */
+@media (max-width:900px){
+  body{
+    background-color: green;
+  }
+  main{
+    flex-direction: column;
+  }
+  #sidebar{
+    width: 100%;
+  }
+  #main-content{
+    width: 100%;
+    padding: 0;
+  }
+  .auth-3,.order-5{
+    width: 95%;
+    margin: 30px auto;
+  }
+}
+@media(max-width: 486px){
+  .user-info p, .order-info p, span{
+    font-size: 3.5vw;
+    line-height: 23px;
+  }
+}

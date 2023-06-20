@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document API</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <main>
+    <!-- ======SIDE-BAR====== -->
+    <section id="sidebar">
+      <header>
+        <h2>10-E-Commerce-DEV</h2>
+        <p>Documentation for E-commerce API</p>
+      </header>
+      <!-- LINKS TO DIFFERENT SECTIONS -->
+      <div class="links">
+        <!-- BEGINNING OF AUTH SECTION -->
+        <section class="auth">
+          <ul>
+            <li><b>Auth</b>
+              <ol>
+                <li><a href="#">Login User</a></li>
+                <li><a href="#">Logout User</a></li>
+                <li><a href="#">Register User</a></li>
+              </ol>
+            </li>
+          </ul>
+        </section>
+        <!-- END OF AUTH SECTION -->
+
+        <!-- BEGINNING OF ORDER SECTION -->
+        <section class="order">
+          <ul>
+            <li><b>Order</b>
+              <ol>
+                <li><a href="#">Create Order</a></li>
+                <li><a href="#">Get All Orders</a></li>
+                <li><a href="#">Get All Users Orders</a></li>
+                <li><a href="#">Get Single Order</a></li>
+                <li><a href="#">Update Order</a></li>
+              </ol>
+            </li>
+          </ul>
+        </section>
+        <!-- END OF ORDER SECTION -->
+
+        <!-- BEGINNING OF PRODUCT SECTION -->
+        <section class="product">
+          <ul>
+            <li><b>Product</b>
+              <ol>
+                <li><a href="#">Create Product</a></li>
+                <li><a href="#">Delete Product</a></li>
+                <li><a href="#">Get All Products</a></li>
+                <li><a href="#">Get Single Product</a></li>
+                <li><a href="#">Update Product</a></li>
+                <li><a href="#">Upload Image</a></li>
+              </ol>
+            </li>
+          </ul>
+        </section>
+        <!-- END OF PRODUCT SECTION -->
+
+        <!-- BEGINNING OF REVIEW SECTION -->
+        <section class="review">
+          <ul>
+            <li><b>Review</b>
+              <ol>
+                <li><a href="#">Create Review</a></li>
+                <li><a href="#">Delete Review</a></li>
+                <li><a href="#">Get All Reviews</a></li>
+                <li><a href="#">Get single Review</a></li>
+                <li><a href="#">Update Review</a></li>
+              </ol>
+            </li>
+          </ul>
+        </section>
+        <!-- END OF REVIEW SECTION -->
+
+        <!-- BEGINNING OF USER SECTION -->
+        <section class="user">
+          <ul>
+            <li><b>User</b>
+              <ol>
+                <li><a href="#">Get All Users</a></li>
+                <li><a href="#">Get Single User</a></li>
+                <li><a href="#">Show Current User</a></li>
+              </ol>
+            </li>
+          </ul>
+        </section>
+        <!-- END OF USER SECTION -->
+      </div>
+      <!-- END OF LINKS TO DIFFERENT SECTIONS -->
+    </section>
+    <!-- END OF SIDE-BAR -->
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxx========================xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+    <!-- ======MAIN-CONTENT====== -->
+    <section id="main-content">
+
+
+      <div class="auth-3">
+        <p>Auth <span class="circle">3</span></p>
+
+        <section class="user-info">
+
+          <!-- -====1 -->
+          <div class="login-user">
+            <p>+Login User <span>POST</span> <a href="#">localhost:3000/api/
+              v1/auth/login</a>
+            </p>
+          </div>
+
+          <!-- ====2 -->
+          <div class="logout-user">
+            <p>+Login User <span>GET</span> <a href="#">localhost:3000/api/
+              v1/auth/logout</a>
+            </p>
+          </div>
+
+          <!-- =-=-=-3==== -->
+          <div class="register-user">
+            <p>+Login User <span>POST</span> <a href="#">localhost:3000/api/
+              v1/auth/register</a>
+            </p>
+          </div>
+
+        </section>
+        <!-- end of user info -->
+
+      </div>
+<!-- auth-3 end  -->
+
+
+     <div class="order-5">
+        <p>Order <span class="circle">5</span></p>
+
+        <section class="order-info">
+ 
+          <!-- -====1 -->
+          <div class="create-order">
+            <p>+Login User <span>POST</span> <a href="#">localhost:3000/api/
+              v1/orders/createPaymentIntent</a>
+            </p>
+          </div>
+
+          <!-- ====2 -->
+          <div class="get-all-orders">
+            <p>+Login User <span>GET</span> <a href="#">localhost:3000/api/
+              v1/orders</a>
+            </p>
+          </div>
+
+          <!-- =-=-=-3==== -->
+          <div class="get-all-user-orders">
+            <p>+Login User <span>GET</span> <a href="#">localhost:3000/api/
+              v1/orders/showAllMyOrders</a>
+            </p>
+          </div>
+
+          <!-- =-=-=-4==== -->
+          <div class="get-single-order">
+            <p>+Login User <span>GET</span> <a href="#">localhost:3000/api/
+              v1/orders/</a>
+            </p>
+          </div>
+          
+
+          <!-- =-=-=-5==== -->
+          <div class="update-order">
+            <p>+Login User <span>PATCH</span> <a href="#">localhost:3000/api/
+              v1/orders/</a>
+            </p>
+          </div>
+
+        </section>
+
+      </div>
+      <!-- ORDER 5 ENDING ------=== -->
+    <!-- END OF MAIN-CONTENT -->
+  </main>
+
+</body>
+</html>
