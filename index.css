@@ -128,6 +128,7 @@ main{
   }
   #sidebar{
     width: 100%;
+    background-color:lightblue;
   }
   #main-content{
     width: 100%;
